@@ -3,4 +3,5 @@ void main(){
 // Once assigned, type cannot change.
   var value = 2;
   print(value);
+
 }
