@@ -1,12 +1,13 @@
 
 void main(){
 
-//Write a program to swap two numbers.
+//THIs is the property of the String :
 
 String str = 'RASHID khan';
 int str2 = 3;
 
 print(str.length);
+print(str.split(str.length.toString()));
 print(str.codeUnits);
 print(str.toLowerCase());
 print(str.isEmpty);
