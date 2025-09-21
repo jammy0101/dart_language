@@ -1,12 +1,11 @@
 void main() {
-//  Object is non-nullable by default in Dart (with sound null safety).
-// Object? is the nullable version.
-  Object? value;
-  print(value); // Output: Hello
+  Object obj = "Hello";
 
-  value = 123;
-  print(value); // Output: 123
+  print(obj.toString()); // ✅ Allowed (toString() is in Object)
 
-  value = true;
-  print(value); // Output: true
+  // print(obj.length); ❌ Error (Object doesn’t know String has length)
+
+  // Fix with casting:
+  // print((obj as String).length); // ✅ 5
+  print((obj as String).length);
 }
